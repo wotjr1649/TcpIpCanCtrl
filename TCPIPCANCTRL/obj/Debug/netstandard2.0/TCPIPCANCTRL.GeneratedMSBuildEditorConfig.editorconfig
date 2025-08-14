@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = TCPIPCANCTRL
+build_property.ProjectDir = C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\service\\communicationorchestrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\service\\communicationorchestrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\service\\jbcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\service\\jbcommandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\transport\\pipelinetransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\transport\\pipelinetransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\util\\memoryowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\util\\memoryowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\util\\encodingtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\util\\encodingtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\util\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\util\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\command\\commandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\command\\commandprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\controller\\tcpipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\controller\\tcpipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\controller\\commandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\controller\\commandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\parser\\jbframeparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\parser\\jbframeparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|c:\\users\\js\\documents\\dev\\wcs_\uCD5C\uC2E0\uD654\\tcpipcanctrl\\tcpipcanctrl\\event\\onerroreventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D1F64E-E8D5-4A7F-B9C4-CE15F07412B1}|TCPIPCANCTRL\\TCPIPCANCTRL.csproj|solutionrelative:tcpipcanctrl\\event\\onerroreventargs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EncodingType.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Util\\EncodingType.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Util\\EncodingType.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Util\\EncodingType.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Util\\EncodingType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:49:31.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MemoryOwner.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Util\\MemoryOwner.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Util\\MemoryOwner.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Util\\MemoryOwner.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Util\\MemoryOwner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T01:49:30.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TcpipController.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Controller\\TcpipController.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Controller\\TcpipController.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Controller\\TcpipController.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Controller\\TcpipController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T02:07:17.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Util\\Constants.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Util\\Constants.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Util\\Constants.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Util\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T02:23:17.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommunicationOrchestrator.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Service\\CommunicationOrchestrator.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Service\\CommunicationOrchestrator.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Service\\CommunicationOrchestrator.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Service\\CommunicationOrchestrator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T01:05:01.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JbCommandProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Service\\JbCommandProcessor.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Service\\JbCommandProcessor.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Service\\JbCommandProcessor.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Service\\JbCommandProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T01:05:02.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PipelineTransport.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Transport\\PipelineTransport.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Transport\\PipelineTransport.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Transport\\PipelineTransport.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Transport\\PipelineTransport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T02:29:28.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "JbFrameParser.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Parser\\JbFrameParser.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Parser\\JbFrameParser.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Parser\\JbFrameParser.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Parser\\JbFrameParser.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T00:49:41.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CommandProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Command\\CommandProcessor.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Command\\CommandProcessor.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Command\\CommandProcessor.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Command\\CommandProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T01:20:06.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OnErrorEventArgs.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Event\\OnErrorEventArgs.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Event\\OnErrorEventArgs.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Event\\OnErrorEventArgs.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Event\\OnErrorEventArgs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T02:31:16.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CommandController.cs",
+              "DocumentMoniker": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Controller\\CommandController.cs",
+              "RelativeDocumentMoniker": "TCPIPCANCTRL\\Controller\\CommandController.cs",
+              "ToolTip": "C:\\Users\\js\\Documents\\DEV\\WCS_\uCD5C\uC2E0\uD654\\TCPIPCANCTRL\\TCPIPCANCTRL\\Controller\\CommandController.cs",
+              "RelativeToolTip": "TCPIPCANCTRL\\Controller\\CommandController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T01:20:09.011Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

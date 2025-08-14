@@ -1,0 +1,10 @@
+C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\obj\Debug\netstandard2.0\TCPIPCANCTRL.csproj.AssemblyReference.cache
+C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\obj\Debug\netstandard2.0\TCPIPCANCTRL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\obj\Debug\netstandard2.0\TCPIPCANCTRL.AssemblyInfoInputs.cache
+C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\obj\Debug\netstandard2.0\TCPIPCANCTRL.AssemblyInfo.cs
+C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\obj\Debug\netstandard2.0\TCPIPCANCTRL.csproj.CoreCompileInputs.cache
+C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\bin\Debug\netstandard2.0\TCPIPCANCTRL.deps.json
+C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\bin\Debug\netstandard2.0\TCPIPCANCTRL.dll
+C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\bin\Debug\netstandard2.0\TCPIPCANCTRL.pdb
+C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\obj\Debug\netstandard2.0\TCPIPCANCTRL.dll
+C:\Users\js\Documents\DEV\WCS_최신화\TCPIPCANCTRL\TCPIPCANCTRL\obj\Debug\netstandard2.0\TCPIPCANCTRL.pdb

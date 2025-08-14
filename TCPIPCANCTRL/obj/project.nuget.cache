@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "w/aWA/jZ44A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\js\\Documents\\DEV\\WCS_최신화\\TCPIPCANCTRL\\TCPIPCANCTRL\\TCPIPCANCTRL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\js\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.7\\microsoft.bcl.asyncinterfaces.9.0.7.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.buffers\\4.6.1\\system.buffers.4.6.1.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.io.pipelines\\9.0.7\\system.io.pipelines.9.0.7.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.memory\\4.6.3\\system.memory.4.6.3.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.numerics.vectors\\4.6.1\\system.numerics.vectors.4.6.1.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.1.2\\system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.text.encoding.codepages\\9.0.7\\system.text.encoding.codepages.9.0.7.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.threading.channels\\9.0.7\\system.threading.channels.9.0.7.nupkg.sha512",
+    "C:\\Users\\js\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
