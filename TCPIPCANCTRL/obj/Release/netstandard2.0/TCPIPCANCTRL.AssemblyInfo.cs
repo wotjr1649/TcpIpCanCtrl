@@ -11,13 +11,13 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TCPIPCANCTRL")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("BOWOOSYSTEM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.0+e754accb89838d8bb164dd99de56c632c1d12571")]
 [assembly: System.Reflection.AssemblyProductAttribute("TCPIPCANCTRL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TCPIPCANCTRL")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.1.0.0")]
 
 // MSBuild WriteCodeFragment 클래스에서 생성되었습니다.
 

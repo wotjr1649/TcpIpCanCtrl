@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w/aWA/jZ44A=",
+  "dgSpecHash": "mb54RAzBoUA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\js\\Documents\\DEV\\WCS_최신화\\TCPIPCANCTRL\\TCPIPCANCTRL\\TCPIPCANCTRL.csproj",
+  "projectFilePath": "C:\\Users\\js\\Documents\\GitHub\\TcpIpCanCtrl\\TCPIPCANCTRL\\TCPIPCANCTRL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\js\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.7\\microsoft.bcl.asyncinterfaces.9.0.7.nupkg.sha512",
     "C:\\Users\\js\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

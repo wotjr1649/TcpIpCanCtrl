@@ -2,6 +2,7 @@
 using System.Buffers;
 using System.Runtime.InteropServices;
 using System.Text;
+using TcpIpCanCtrl.Model;
 using TcpIpCanCtrl.Util;
 
 namespace TcpIpCanCtrl.Command
@@ -13,11 +14,12 @@ namespace TcpIpCanCtrl.Command
         /// 명령 시퀀스, 페이로드, 인코딩 정보를 바탕으로 바이트 배열을 조립합니다.
         /// 이 메서드는 MemoryPool을 사용하여 메모리 재사용을 최적화합니다.
         /// </summary>
+        /// <param name="_index">JB 인덱스</param>
         /// <param name="_seq">4자리 시퀀스 번호</param>
         /// <param name="_payload">페이로드 문자열</param>
         /// <param name="_encoding">사용할 인코딩 타입</param>
         /// <returns>빌려온 메모리 영역을 관리하는 IMemoryOwner</returns>
-        internal static IMemoryOwner<byte> Build(int _seq, string _payload, Encoding _encoding)
+        internal static (IMemoryOwner<byte>,JbFrame) Build(int _index, int _seq, string _payload, Encoding _encoding)
         {
             //var payloadLen = _payload.Length;
             var payloadLen = _encoding.GetByteCount(_payload);
@@ -59,7 +61,7 @@ namespace TcpIpCanCtrl.Command
                 throw;
             }
 
-            return new MemoryOwner(owner, totalLength);
+            return (new MemoryOwner(owner, totalLength), new JbFrame(_index, _payload.Substring(0, 4), _payload[4], _payload[5], _payload.Substring(6) ?? null));
         }
     }
 }

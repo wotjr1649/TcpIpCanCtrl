@@ -14,6 +14,6 @@ namespace TcpIpCanCtrl.Util
         public static readonly Encoding Ascii = Encoding.ASCII;
 
         // EUC-KR (ksc_5601)이 필요한 경우 추가
-        public static readonly Encoding Ksc5601 = Encoding.GetEncoding("ksc_5601", EncoderFallback.ExceptionFallback, DecoderFallback.ExceptionFallback);
+        //public static readonly Encoding Ksc5601 = Encoding.GetEncoding("ksc_5601", EncoderFallback.ExceptionFallback, DecoderFallback.ExceptionFallback);
     }
 }

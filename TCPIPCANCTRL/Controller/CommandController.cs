@@ -12,6 +12,7 @@ namespace TcpIpCanCtrl.Controller
     internal sealed class PortAllOnCommand : ICommand
     {
         private readonly int _canId;
+        private const string CMD_PREFIX = "000MA";
 
         /// <param name="canId">can 포트 값</param>
         internal PortAllOnCommand(int canId) => _canId = canId;
@@ -25,7 +26,7 @@ namespace TcpIpCanCtrl.Controller
         public string GetPayload()
         {
             var sb = new StringBuilder();
-            sb.Append(_canId.ToString()).Append(Constants.PORT_ALL_ON);
+            sb.Append(_canId.ToString()).Append(CMD_PREFIX);
             return sb.ToString();
         }
 
@@ -34,6 +35,7 @@ namespace TcpIpCanCtrl.Controller
     internal sealed class PortAllOffCommand : ICommand
     {
         private readonly int _canId;
+        private const string CMD_PREFIX = "000MZ";
 
         /// <param name="canId">can 포트 값</param>
         internal PortAllOffCommand(int canId) => _canId = canId;
@@ -47,7 +49,7 @@ namespace TcpIpCanCtrl.Controller
         public string GetPayload()
         {
             var sb = new StringBuilder();
-            sb.Append(_canId.ToString()).Append(Constants.PORT_ALL_OFF);
+            sb.Append(_canId.ToString()).Append(CMD_PREFIX);
             return sb.ToString();
         }
 
@@ -67,13 +69,14 @@ namespace TcpIpCanCtrl.Controller
                 throw new ArgumentException("payload 길이가 4보다 작거나 공백이면 안됩니다.", nameof(_payload));
         }
 
-        public string GetPayload() => _payload.PadRight(Constants.FIXED_FRAME_LENGTH, Constants.PAD_CHAR_FOR_VALUE); // 바이트 고정으로 추가 개선
+        public string GetPayload() => _payload;
 
         public Encoding_Type GetEncodingType() => Encoding_Type.ASCII;
     }
     internal sealed class UnitOneOffCommand : ICommand
     {
         private readonly string _address;
+        private const string CMD_PREFIX = "LD";
 
         /// <param name="address">표시기 주소값</param>
         internal UnitOneOffCommand(string address) => _address = address;
@@ -87,7 +90,7 @@ namespace TcpIpCanCtrl.Controller
         public string GetPayload()
         {
             var sb = new StringBuilder();
-            sb.Append(_address).Append(Constants.UNIT_ONE_OFF);
+            sb.Append(_address).Append(CMD_PREFIX);
             return sb.ToString();
         }
 
@@ -96,21 +99,21 @@ namespace TcpIpCanCtrl.Controller
     internal sealed class UnitSetCommand : ICommand
     {
         private readonly string _address;
+        private const string CMD_PREFIX = "000MS";
 
         /// <param name="address">표시기에 주소값</param>
         internal UnitSetCommand(string address) => _address = address;
 
         public void Validate()
         {
-            if (string.IsNullOrEmpty(_address) || _address.Length < 4 || _address.Length > 5)
-                throw new ArgumentException("주소에는 값이 비어있거나 공백이 포함될 수 없습니다.", nameof(_address));
+            if (string.IsNullOrEmpty(_address) || _address.Length != 5)
+                throw new ArgumentException("주소에는 값이 비어있거나 공백이 포함될 수 없고 JB박스 인덱스를 포함한 5자 이어야 합니다.", nameof(_address));
         }
 
         public string GetPayload()
         {
             var sb = new StringBuilder();
-            sb.Append(_address.Length is 5 ? _address[1] : _address[0]).Append(Constants.UNIT_SET);
-            sb.Append(_address.PadRight(Constants.FIXED_FRAME_LENGTH, Constants.PAD_CHAR_FOR_VALUE));
+            sb.Append(_address[1]).Append(CMD_PREFIX).Append(_address);
             return sb.ToString();
         }
 
@@ -120,6 +123,7 @@ namespace TcpIpCanCtrl.Controller
     internal sealed class BcriOnCommand : ICommand
     {
         private readonly string _address;
+        private const string CMD_PREFIX = "BO";
 
         /// <param name="address">바코드 주소값</param>
         internal BcriOnCommand(string address) => _address = address;
@@ -133,7 +137,7 @@ namespace TcpIpCanCtrl.Controller
         public string GetPayload()
         {
             var sb = new StringBuilder();
-            sb.Append(_address).Append(Constants.BCRI_ON);
+            sb.Append(_address).Append(CMD_PREFIX);
             return sb.ToString();
         }
 
@@ -142,6 +146,7 @@ namespace TcpIpCanCtrl.Controller
     internal sealed class BcriOffCommand : ICommand
     {
         private readonly string _address;
+        private const string CMD_PREFIX = "BO";
 
         /// <param name="address">바코드 주소값</param>
         internal BcriOffCommand(string address) => _address = address;
@@ -155,16 +160,45 @@ namespace TcpIpCanCtrl.Controller
         public string GetPayload()
         {
             var sb = new StringBuilder();
-            sb.Append(_address).Append(Constants.BCRI_OFF);
+            sb.Append(_address).Append(CMD_PREFIX);
             return sb.ToString();
         }
 
         public Encoding_Type GetEncodingType() => Encoding_Type.ASCII;
     }
 
+    internal sealed class Disp5SndCommand : ICommand
+    {
+        private readonly string _value;
+        private const string CMD_PREFIX = "LF";
+
+        /// <param name="value">5행 표시기에 보낼 명령어</param>
+        internal Disp5SndCommand(string value) => _value = value;
+
+        public void Validate()
+        {
+            if (string.IsNullOrEmpty(_value))
+                throw new ArgumentException("표시할 메시지는 비어 있거나 Null값이 포함될 수 없습니다.", nameof(_value));
+            if (_value.Length < 4 || _value.Length > 9)
+                throw new ArgumentException($"메시지 길이는 4~9자여야 합니다. (현재: {_value.Length}글자)", nameof(_value));
+        }
+
+        public string GetPayload()
+        {
+            var address = _value.Substring(0, 4);
+            var payloadData = _value.Substring(4).PadRight(5, Constants.PAD_CHAR_FOR_VALUE);
+            var sb = new StringBuilder();
+            sb.Append(address).Append(CMD_PREFIX).Append(payloadData);
+            return sb.ToString();
+        }
+
+        public Encoding_Type GetEncodingType() => Encoding_Type.ASCII;
+    }
     internal sealed class Disp10SndCommand : ICommand
     {
         private readonly string _value;
+        private const string CMD_PREFIX_1 = "LF1";
+        private const string CMD_PREFIX_2 = "LF2";
 
         /// <param name="value">10행 표시기에 보낼 명령어</param>
         internal Disp10SndCommand(string value) => _value = value;
@@ -182,8 +216,8 @@ namespace TcpIpCanCtrl.Controller
             var address = _value.Substring(0, 4);
             var payloadData = _value.Substring(4).PadRight(10, Constants.PAD_CHAR_FOR_VALUE);
             var sb = new StringBuilder();
-            sb.Append(address).Append(Constants.DISP_SND_1).Append(payloadData.Substring(0, 5));
-            sb.Append(address).Append(Constants.DISP_SND_2).Append(payloadData.Substring(5, 5));
+            sb.Append(address).Append(CMD_PREFIX_1).Append(payloadData.Substring(0, 5));
+            sb.Append(address).Append(CMD_PREFIX_2).Append(payloadData.Substring(5, 5));
             return sb.ToString();
         }
 
@@ -192,6 +226,10 @@ namespace TcpIpCanCtrl.Controller
     internal sealed class Disp16SndCommand : ICommand
     {
         private readonly string _value;
+        private const string CMD_PREFIX_1 = "LF1";
+        private const string CMD_PREFIX_2 = "LF2";
+        private const string CMD_PREFIX_3 = "LF3";
+        private const string CMD_PREFIX_4 = "LF4";
 
         /// <param name="value">16행 표시기에 보낼 명령어</param>
         internal Disp16SndCommand(string value) => _value = value;
@@ -211,10 +249,10 @@ namespace TcpIpCanCtrl.Controller
             var address = _value.Substring(0, 4);
             var payloadData = _value.Substring(4).PadRight(16, Constants.PAD_CHAR_FOR_VALUE);
             var sb = new StringBuilder();
-            sb.Append(address).Append(Constants.DISP_SND_1).Append(payloadData.Substring(0, 5));
-            sb.Append(address).Append(Constants.DISP_SND_2).Append(payloadData.Substring(5, 5));
-            sb.Append(address).Append(Constants.DISP_SND_3).Append(payloadData.Substring(10, 5));
-            sb.Append(address).Append(Constants.DISP_SND_4).Append(payloadData.Substring(15, 1));
+            sb.Append(address).Append(CMD_PREFIX_1).Append(payloadData.Substring(0, 5));
+            sb.Append(address).Append(CMD_PREFIX_2).Append(payloadData.Substring(5, 5));
+            sb.Append(address).Append(CMD_PREFIX_3).Append(payloadData.Substring(10, 5));
+            sb.Append(address).Append(CMD_PREFIX_4).Append(payloadData.Substring(15));
             return sb.ToString();
         }
 
@@ -224,23 +262,23 @@ namespace TcpIpCanCtrl.Controller
     internal sealed class LcdAcCommand : ICommand
     {
         private readonly string _address;
+        private const string CMD_PREFIX = "AC111111";
 
         /// <param name="address">한글 표시기 주소값</param>
         internal LcdAcCommand(string address) => _address = address;
 
         public void Validate()
         {
-            if (string.IsNullOrEmpty(_address) || _address.Length < 4)
-                throw new ArgumentException("주소에는 값이 비어있거나 공백이 포함될 수 없습니다.", nameof(_address));
+            if (string.IsNullOrEmpty(_address) || _address.Length != 4)
+                throw new ArgumentException("주소에는 값이 비어있거나 4글자이어야 합니다.", nameof(_address));
         }
 
         public string GetPayload()
         {
             var sb = new StringBuilder();
-            sb.Append(_address).Append(Constants.LCD_AC);
+            sb.Append(_address).Append(CMD_PREFIX);
             return sb.ToString();
         }
-
 
         public Encoding_Type GetEncodingType() => Encoding_Type.ASCII;
     }
@@ -248,6 +286,8 @@ namespace TcpIpCanCtrl.Controller
     {
         private readonly string _address;
         private readonly string _value;
+        private const int FIXED_FRAME_LENGTH = 6; // CAN PORT + ID + MAIN + SUB
+        private const string CMD_PREFIX = "AL";
 
         /// <param name="value">표시기에 적용될 주소값 + 문자열 데이터</param>
         internal LcdAlCommand(string value) { _address = value.Substring(0, 4);  _value = value.Substring(4); }
@@ -271,7 +311,7 @@ namespace TcpIpCanCtrl.Controller
         {
             var sb = new StringBuilder();
             foreach (var chunk in SplitAndPadByByteLimit(_value))
-                sb.Append(_address).Append(Constants.LCD_AL).Append(chunk);
+                sb.Append(_address).Append(CMD_PREFIX).Append(chunk);
 
             return sb.ToString();
         }
@@ -290,7 +330,7 @@ namespace TcpIpCanCtrl.Controller
 
                 if (currentByteLength + charByteLength > 6)
                 {
-                    yield return PadToSixBytes(currentChunk.ToString(), Constants.FIXED_FRAME_LENGTH - currentByteLength);
+                    yield return PadToSixBytes(currentChunk.ToString(), FIXED_FRAME_LENGTH - currentByteLength);
                     currentChunk.Clear();
                     currentByteLength = 0;
                 }
@@ -301,7 +341,7 @@ namespace TcpIpCanCtrl.Controller
 
             if (currentChunk.Length > 0)
             {
-                yield return PadToSixBytes(currentChunk.ToString(), Constants.FIXED_FRAME_LENGTH - currentByteLength);
+                yield return PadToSixBytes(currentChunk.ToString(), FIXED_FRAME_LENGTH - currentByteLength);
             }
         }
 
